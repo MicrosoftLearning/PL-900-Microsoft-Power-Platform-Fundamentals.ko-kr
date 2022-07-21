@@ -2,12 +2,12 @@
 lab:
   title: '랩 3: 모델 기반 앱 빌드 방법'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: ed98e1f2c2ff900f84b98910e0ef2d14d130f462
-ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
+ms.openlocfilehash: c69ca883cc8f8c8b00ed3f67fb18f93b035726e3
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "146458377"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125764"
 ---
 # <a name="module-3-get-started-with-power-apps"></a>모듈 3: Power Apps 시작
 ## <a name="lab-how-to-build-a-model-driven-app"></a>랩: 모델 기반 앱 빌드 방법
@@ -234,7 +234,7 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 2. 새 연락처 만들기
 
-    0. 앱에서 **내 활성 연락처** 보기를 열어야 합니다. 그렇지 않으면 왼쪽에서 방문을 선택합니다.
+    0. 앱에서 **내 활성 연락처** 보기를 열어야 합니다. 그렇지 않으면 왼쪽에서 연락처를 선택합니다.
 
     1. 최상위 메뉴에서 **새로 만들기** 를 클릭합니다.
 

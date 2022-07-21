@@ -2,12 +2,12 @@
 lab:
   title: '랩 5: 간단한 대시보드를 빌드하는 방법'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 1df94fcda0e59554c10ed772314e5138936b73a8
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812937"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125740"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>모듈 5: Power BI 시작하기
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>랩: 간단한 대시보드를 빌드하는 방법
@@ -88,9 +88,9 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
 5.  원형 차트 외부의 보고서를 클릭하여 선택을 취소하고 **시각화** 창에서 누적된 열 차트를 선택합니다.
 
-6.  필드 창에서 **bc_Visit** 옆에 있는 드롭다운 화살표를 누릅니다. **방문** 필드를 끌어서 **값** 상자에 드롭합니다.
+6.  필드 창에서 **bc_Visit** 옆에 있는 드롭다운 화살표를 누릅니다. **방문** 필드를 끌어서 **Y축** 대상 상자에 놓습니다.
 
-7.  **시작** 필드를 끌어서 **축** 대상 상자에 놓습니다.
+7.  **시작** 필드를 끌어서 **X축** 대상 상자에 놓습니다.
 
 8.  시각화 창에서 **연도** 및 **분기** 옆의 **x** 를 클릭하여 축의 **월** 및 **일** 합계만 남겨둡니다.
 
