@@ -2,17 +2,16 @@
 lab:
   title: '랩 5: 간단한 대시보드를 빌드하는 방법'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812937"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154446"
 ---
-# <a name="module-5-get-started-with-power-bi"></a>모듈 5: Power BI 시작하기
-## <a name="lab-how-to-build-a-simple-dashboard"></a>랩: 간단한 대시보드를 빌드하는 방법
+## <a name="lab-5-how-to-build-a-simple-dashboard"></a>랩 5: 간단한 대시보드를 빌드하는 방법
 
-# <a name="scenario"></a>시나리오
+## <a name="scenario"></a>시나리오
 
 Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다. 캠퍼스 방문자는 현재 종이 저널에 기록되어 있습니다. 이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
 
@@ -20,43 +19,33 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 이 과정 전반에 걸쳐 벨로즈 칼리지 관리 및 보안 담당자가 캠퍼스 내 건물에 대한 액세스를 관리하고 제어할 수 있도록 애플리케이션을 빌드하고 자동화를 수행합니다.
 
-이 랩에서는 캠퍼스 방문에 대한 데이터를 시각화하는 Power BI 대시보드를 빌드합니다.
+이 랩에서는 캠퍼스 방문에 대한 데이터를 시각화하는 Power BI 보고서 및 대시보드를 빌드합니다.
 
-# <a name="high-level-lab-steps"></a>고급 랩 단계
+## <a name="high-level-lab-steps"></a>고급 랩 단계
 
 Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따릅니다.
 
--   Dataverse에 연결
-
--   관련 행(조회)에 대한 사용자에게 친숙한 설명을 포함하도록 데이터 변환
-
--   캠퍼스 방문 정보의 다양한 시각화를 통해 보고서를 만들고 게시
+-   캠퍼스 방문 정보에 대한 다양한 시각화가 포함된 보고서 만들기
 
 -   추가 시각화를 빌드하는 사용자 자연어 쿼리 활용
 
--   Power BI 대시보드의 모바일 뷰 빌드
-
 ## <a name="prerequisites"></a>필수 조건
 
--   **모듈 0 랩 0 - 랩 환경 검증** 완료
-
--   **모듈 2 랩 1 - Microsoft Dataverse 소개** 완료
+- **모듈 0 랩 0 - 랩 환경 검증** 완료
+- **모듈 2 랩 1 - 데이터 모델링** 완료
 
 ## <a name="things-to-consider-before-you-begin"></a>시작하기 전에 고려해야 할 사항
 
 -   보고서의 대상 그룹은 누구입니까?
-
 -   대상 그룹은 보고서를 어떻게 소비합니까? 일반적인 디바이스는 무엇인가요? 위치는 어디인가요?
-
 -   시각화할 데이터가 충분합니까?
-
 -   방문 데이터를 분석하는 데 사용 가능한 특징은 무엇입니까?
 
-# <a name="exercise-1-create-power-bi-report"></a>연습 \#1: Power BI 보고서 만들기
+## <a name="exercise-1-create-power-bi-report"></a>연습 1: Power BI 보고서 만들기
 
 **목표:** 이 연습에서는 앞선 연습에서 활용했던 Excel 스프레드시트 데이터를 기준으로 Power BI 보고서를 만듭니다.
 
-## <a name="task-1-prepare-power-bi-service"></a>작업 \#1: Power BI 서비스 준비
+### <a name="task-1-prepare-power-bi-service"></a>작업 \#1: Power BI 서비스 준비
 
 1.  [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix)를 다운로드하여 컴퓨터에 저장합니다.
 
@@ -70,17 +59,17 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
 6.  이전에 다운로드한 **visits.pbix** 파일을 찾아 선택합니다.
 
-7.  데이터 로드가 완료되면 **방문** 보고서를 선택합니다(유형이 **보고서** 로 설정되어 있음을 알 수 있음).
+7.  데이터 로드가 완료되면 **내 작업 영역** 을 확장하고 **방문** 보고서를 선택합니다(형식이 **Report** 로 설정되어 있음).
 
 8.  **편집** 을 클릭합니다. **편집** 메뉴 항목이 표시되지 않으면 **...** 를 클릭한 다음 **편집** 을 선택합니다.
 
-이제 랩에 사용할 Power BI 서비스를 설정했습니다. 
+이제 랩에 사용할 Power BI 서비스를 설정했습니다.
 
-## <a name="task-2-create-chart-and-time-visualizations"></a>작업 \#2: 차트 및 시간 시각화를 만듭니다
+### <a name="task-2-create-chart-and-time-visualizations"></a>작업 \#2: 차트 및 시간 시각화를 만듭니다
 
 1.  **시각화** 패널에서 **원형 차트** 아이콘을 눌러 차트를 삽입합니다.
 
-2.  필드 창에서 **bc_name** 옆에 있는 드롭다운 화살표를 누릅니다. **건물** 필드를 끌어서 **범례** 상자에 드롭합니다.
+2.  필드 창에서 **bc_building** 옆에 있는 드롭다운 화살표를 누릅니다. **건물** 필드를 끌어서 **범례** 상자에 드롭합니다.
 
 3.  필드 창에서 **bc_Visit** 옆에 있는 드롭다운 화살표를 누릅니다. **방문** 필드를 끌어서 **값** 상자에 드롭합니다.
 
@@ -88,9 +77,9 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
 5.  원형 차트 외부의 보고서를 클릭하여 선택을 취소하고 **시각화** 창에서 누적된 열 차트를 선택합니다.
 
-6.  필드 창에서 **bc_Visit** 옆에 있는 드롭다운 화살표를 누릅니다. **방문** 필드를 끌어서 **값** 상자에 드롭합니다.
+6.  필드 창에서 **bc_Visit** 옆에 있는 드롭다운 화살표를 누릅니다. **방문** 필드를 끌어서 **Y축** 대상 상자에 놓습니다.
 
-7.  **시작** 필드를 끌어서 **축** 대상 상자에 놓습니다.
+7.  **시작** 필드를 끌어서 **X축** 대상 상자에 놓습니다.
 
 8.  시각화 창에서 **연도** 및 **분기** 옆의 **x** 를 클릭하여 축의 **월** 및 **일** 합계만 남겨둡니다.
 
@@ -100,15 +89,15 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
     1.  원형 차트에서 다양한 건물 조각을 클릭하고 시간 보고서의 변경 사항을 관찰합니다.
 
-    2.  열 차트를 클릭합니다. 아래쪽 화살표를 눌러 **드릴다운** 모드를 켠 다음(또는 차트를 마우스 오른쪽 버튼으로 클릭하고 **드릴다운** 선택) 열을 클릭하여 다음 수준(일)으로 드릴다운합니다. 
-    
+    2.  열 차트를 클릭합니다. 아래쪽 화살표를 눌러 **드릴다운** 모드를 켠 다음(또는 차트를 마우스 오른쪽 버튼으로 클릭하고 **드릴다운** 선택) 열을 클릭하여 다음 수준(일)으로 드릴다운합니다.
+
     3.  드릴업 및 드릴 다운 후, 시간 세로 막대형 차트에서 다양한 막대를 선택하여 원형 보고서의 변경 내용을 관찰합니다.
 
 11. **저장** 을 눌러 진행 중인 작업을 저장합니다.
 
-# <a name="exercise-2-create-power-bi-dashboard"></a>연습 \#2: Power BI 대시보드 만들기
+## <a name="exercise-2-create-power-bi-dashboard"></a>연습 2: Power BI 대시보드 만들기
 
-## <a name="task-1-create-power-bi-dashboard"></a>작업 \#1: Power BI 대시보드 만들기
+### <a name="task-1-create-power-bi-dashboard"></a>작업 \#1: Power BI 대시보드 만들기
 
 1.  이전 작업의 보고서가 열려있습니다.
 
@@ -118,13 +107,11 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
 4.  **캠퍼스 관리** 를 **대시보드 이름** 으로 입력하고 **라이브 고정** 을 누릅니다.
 
-5.  상단의 **내 작업 영역** 을 선택하고 **[사용자의 성] 캠퍼스 관리** 대시보드를 선택합니다.
+5.  대시보드가 만들어졌는지 묻는 팝업 메시지가 표시됩니다. **대시보드로 이동** 을 선택합니다.
 
-6.  대시보드가 만들어졌는지 묻는 팝업 메시지가 표시됩니다. **대시보드로 이동** 을 선택합니다.
+6.  표시된 원형 및 막대형 차트의 대화형 작업을 테스트합니다.
 
-7.  표시된 원형 및 막대형 차트의 대화형 작업을 테스트합니다.
-
-## <a name="task-2-add-visualizations-using-natural-language"></a>작업 \#2: 자연어를 사용하여 시각화 추가
+### <a name="task-2-add-visualizations-using-natural-language"></a>작업 \#2: 자연어를 사용하여 시각화 추가
 
 1.  **캠퍼스 관리** 대시보드 내에서 맨 위에 있는 **데이터에 대해 질문하기** 를 선택합니다.
 
