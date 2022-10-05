@@ -8,7 +8,7 @@ lab:
 
 ## <a name="scenario"></a>시나리오
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다. 캠퍼스 방문자는 현재 종이 저널에 기록되어 있습니다. 이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
 
 캠퍼스 관리부는 건물 액세스가 보안 요원에 의해 제어되고, 모든 방문이 반드시 호스트에 의해 사전 등록 및 기록되는 현대화된 방문자 등록 시스템을 원합니다.
 
@@ -61,7 +61,7 @@ Bellows College is an educational organization with multiple buildings on campus
 
 4. **데이터 환경** 섹션에서 **양식**을 선택하고 **기본** 양식 형식의 정보 양식을 클릭하여 엽니다.
 
-<bpt id="p1">**</bpt>IMPORTANT:<ept id="p1">**</ept> Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of <bpt id="p2">**</bpt>Main<ept id="p2">**</ept> and not something else. By default, the form has two fields: Name and Owner.
+**중요:** 기본적으로 모든 양식은 정보이므로 선택한 양식이 **기본** 양식 형식이고 다른 것이 아닌지 확인합니다. 기본적으로 양식에는 이름 및 소유자라는 두 개의 필드가 있습니다.
 
 5. 속성 패널의 오른쪽 화면에서 **표시 이름** 필드를 선택하고 **기본 정보**로 변경합니다.
 
@@ -79,19 +79,19 @@ Bellows College is an educational organization with multiple buildings on campus
 
 7. **코드** 열을 드래그하여 양식 헤더에 놓습니다.
 
-The header is the top right area of the form. You may need to collapse the Properties panel on the right side of the screen to see the field on the form.
+헤더는 양식의 오른쪽 상단 영역입니다. 양식의 필드를 보려면 화면 오른쪽에 있는 속성 패널을 축소해야 할 수 있습니다.
 
 8. **코**드 필드가 선택된 상태에서 화면 오른쪽 속성 패널의 **읽기 전용**에 대한 체크박스를 선택합니다.
 
-9. Select <bpt id="p1">**</bpt>Owner<ept id="p1">**</ept> field. In the Properties panel, change the <bpt id="p1">**</bpt>Label<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Host<ept id="p2">**</ept>
+9. **소유자** 필드를 선택합니다. 속성 패널에서 **레이블**을 **호스트**로 변경합니다.
 
 10. 오른쪽 상단에서 **저장**을 클릭하고 저장이 완료될 때까지 기다립니다.
 
 11. 오른쪽 상단에서 **게시**를 클릭하고 게시가 완료될 때까지 기다립니다.
 
-12. Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다.
+12. 편집 보기가 새 브라우저 탭 또는 창에서 열리면 닫습니다. 그렇지 않으면 화면 왼쪽 상단에서 **뒤로**를 클릭합니다. 이제 방문 테이블 양식 탭으로 돌아갈 것입니다.
 
-13. 캠퍼스 방문자는 현재 종이 저널에 기록되어 있습니다.
+13. 왼쪽 위에 있는 이동 경로 사용(테이블>방문>양식). **방문**을 선택하여 **방문** 테이블 기본 화면으로 돌아갑니다.
 
 ### <a name="task-2-edit-active-visits-view"></a>작업 \#2: 활성 방문 뷰 편집
 
@@ -109,7 +109,7 @@ The header is the top right area of the form. You may need to collapse the Prope
 
     4. **예약된 종료**
 
-3. 이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
+3. **만든 날짜** 열을 클릭하고 **제거**를 선택합니다. 이제 **만든 날짜** 필드가 보기에서 제거됩니다.
 
 4. 데이터에 맞게 개별 열 너비의 크기를 조정합니다.
 
@@ -133,17 +133,17 @@ The header is the top right area of the form. You may need to collapse the Prope
 
 5. 필드로 **예약된 시작**을 선택한 다음 드롭다운에서 **오늘**을 조건으로 선택합니다.
 
-6. Click the <bpt id="p1">**</bpt>…<ept id="p1">**</ept> on the <bpt id="p1">**</bpt>Status<ept id="p1">**</ept> row and click <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> to delete that filter condition.
+6. **Schemas** 속성에서 **상태** 행에서 **삭제**를 클릭하여 해당 필터 조건을 삭제합니다.
 
-7. Press <bpt id="p1">**</bpt>Ok<ept id="p1">**</ept> to save the condition. The view is now filtered to show only records where the Scheduled Start date is today.
+7. **확인**을 누르고 조건을 저장합니다. 이제 뷰가 필터링되어 예약된 시작 날짜가 오늘인 레코드만 표시됩니다.
 
 8. 뷰에 **실제 시작** 및 **실제 종료** 필드를 추가합니다.
 
-<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Since we no longer filter on the view status, we will get all today’s visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
+**참고:** 더 이상 보기 상태를 필터링하지 않으므로 완료된 보기를 포함하여 오늘의 모든 방문을 받게 됩니다. 이 필드는 완료된 방문 및 진행 중인 방문을 구별하는 데 도움이 됩니다.
 
-1. **저장**을 클릭합니다.
+9. **저장**을 클릭합니다.
 
-2. **게시**를 클릭하고 게시가 완료될 때까지 기다립니다.
+10. **게시**를 클릭하고 게시가 완료될 때까지 기다립니다.
 
 ## <a name="exercise-2-create-model-driven-app"></a>연습 2: 모델 기반 앱 만들기
 
@@ -181,7 +181,7 @@ The header is the top right area of the form. You may need to collapse the Prope
 
 8. 화면 왼쪽의 탐색을 사용하여 **탐색**을 선택합니다.
 
-9. 탐색 창에서 탐색 모음이 표시된 아래의 **그룹 1**을 선택합니다.
+9. 탐색 창에서 탐색 모음이 표시된 아래의 **그룹 1**을 선택합니다. 왼쪽의 메뉴를 확장해야 할 수 있습니다.
 
 10. 화면 오른쪽의 **표시 옵션** 섹션에서 **제목** 속성을 **보안**으로 변경합니다.
 
@@ -225,13 +225,13 @@ The header is the top right area of the form. You may need to collapse the Prope
 
 2. 새 연락처 만들기
 
-    1. The app should open to the <bpt id="p1">**</bpt>My Active Contacts<ept id="p1">**</ept> view. If it does not, select Contacts on the left-hand navigation.
+    1. 앱에서 **내 활성 연락처** 보기를 열어야 합니다. 그렇지 않으면 왼쪽 탐색에서 연락처를 선택합니다.
 
     1. 최상위 메뉴에서 **새로 만들기**를 클릭합니다.
 
     1. **이름**을 John으로 지정하고 **성**을 Doe로 지정합니다.
 
-    1. Provide your personal email as <bpt id="p1">**</bpt>Email<ept id="p1">**</ept>. This will be used in a future lab where you will receive an email.
+    1. 개인 이메일을 **전자 메일**에 입력합니다. 이 기능은 전자 메일을 받게 될 향후 랩에서 사용됩니다.
 
     1. **저장 후 닫기**를 클릭합니다.
 
@@ -253,9 +253,9 @@ The header is the top right area of the form. You may need to collapse the Prope
 
         1. **예약된 종료**: 내일 날짜를 선택하고 종료 시간으로 오후 3시 30분을 선택합니다.
 
-- Click <bpt id="p1">**</bpt>Save &amp; Close<ept id="p1">**</ept>. This will create the Visit and you should be able to see it on the Active Visits View.
+- **저장 후 닫기**를 클릭합니다. 이렇게 하면 방문이 생성되고 활성 방문 보기에 표시될 것입니다.
 
-- Change view to <bpt id="p1">**</bpt>Today’s Visits<ept id="p1">**</ept>. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
+- **활성 방문** 옆에 **** 있는 드롭다운을 사용하여 오늘 방문으로 보기를 변경합니다. 내일로 예정되어 있기 때문에 더 이상 뷰에서 새 방문을 볼 수 없습니다.
 
 4. 테스트 레코드를 더 추가할 수 있습니다.
 
@@ -263,7 +263,7 @@ The header is the top right area of the form. You may need to collapse the Prope
 
 ![](media/3-model-driven-app.png)
 
-Congratulations! You have created and configured your first model-driven app.
+축하합니다! 첫 번째 모델 기반 앱을 만들고 구성했습니다.
 
 ## <a name="challenges"></a>과제
 

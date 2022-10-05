@@ -8,9 +8,9 @@ lab:
 
 ## <a name="scenario"></a>시나리오
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다. 캠퍼스 방문은 현재 종이에 기록되어 있습니다. 이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
 
-Currently, campus administration is leveraging an Excel spreadsheet to track visitor registration. They would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
+현재 캠퍼스 관리부는 방문자 등록을 추적하기 위해 Excel 스프레드시트를 활용하고 있습니다. 건물 액세스가 보안 요원에 의해 제어되고, 모든 방문이 반드시 호스트에 의해 사전 등록 및 기록되는 현대화된 방문자 등록 시스템을 원합니다.
 
 이 과정 전반에 걸쳐 벨로즈 칼리지 관리 및 보안 담당자가 캠퍼스 내 건물에 대한 액세스를 관리하고 제어할 수 있도록 애플리케이션을 빌드하고 자동화를 수행합니다.
 
@@ -37,11 +37,11 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 ### <a name="task-1-create-the-visits-app"></a>작업 \#1: Visits 앱 만들기
 
-1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
+1.  <https://make.powerapps.com>로 이동합니다. 다시 인증해야 할 수도 있습니다. **로그인**을 클릭하고 필요한 경우 지침을 따르세요.
 
 2.  아직 선택되지 않은 경우 오른쪽 상단에 있는 **[내 이니셜] 연습** 환경을 선택합니다.
 
-3.  If necessary, click the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> icon on the left side of the screen. Under the <bpt id="p1">**</bpt>Start from<ept id="p1">**</ept> section, select <bpt id="p2">**</bpt>Dataverse<ept id="p2">**</ept>.
+3.  필요한 경우 화면 왼쪽에 있는 **홈** 아이콘을 클릭합니다. **시작** 섹션 아래에서 **Dataverse**를 선택합니다.
 
 4.  Dataverse 연결을 선택합니다.
 
@@ -60,17 +60,17 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 ![방문 데이터에서 만든 캔버스 앱입니다.](media/2-canvas-app-from-data.png)
 
-9. Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다.
+9. 앱 디자이너의 명령 모음에서 **앱 미리 보기** 단추(재생 아이콘)를 선택합니다. (키보드에서 F5 키를 눌러 앱을 미리 볼 수도 있습니다.) 주변을 살펴보고 앱이 기본적으로 어떻게 보이는지 확인합니다.
 
 10. 화면 오른쪽 위에 있는 **X**를 선택하여 앱 미리 보기를 닫습니다.
 
-캠퍼스 방문은 현재 종이에 기록되어 있습니다.
+축하합니다. Dataverse 테이블에서 Power App을 성공적으로 만들었습니다. 프로세스의 다음 단계는 대학의 브랜딩에 맞게 앱을 조정하는 것입니다. 다음 일련의 단계에서는 앱에 몇 가지 추가 사용자 지정을 제공하는 방법을 안내합니다.
 
 ### <a name="task-2-modify-and-theme-the-newly-created-app"></a>작업 \#2: 새로 만든 앱을 수정하고 테마를 정합니다.
 
 이 작업에서는 앱의 세 화면 각각에 있는 머리글 텍스트를 사용자 지정하고(찾아보기, 세부 정보 및 편집) 앱 테마를 변경합니다.
 
-1.  이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
+1.  찾아보기 화면에 있습니다. 화면에서 **방문** 레이블을 선택합니다.
 
 1.  화면 오른쪽의 속성 탭에서 **텍스트** 컨트롤 속성을 **“벨로우즈 대학 방문”** 으로 업데이트합니다.
 
@@ -102,18 +102,18 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 이 작업에서는 새 앱을 테스트합니다.
 
-1.  애플리케이션이 앱 디자이너에서 열려 있는 상태에서 **파일**을 선택하고 앱 이름을 **방문 앱**으로 업데이트하고 **저장**을 선택합니다.
+1.  애플리케이션이 앱 디자이너에서 열려 있는 상태에서 **설정을** 선택하고 **, 일반** 섹션에서 앱의 이름을 **방문 앱**으로 업데이트하고, **X** 를 클릭하여 설정 화면을 닫은 다음 **, 저장**을 선택합니다.
 
 2.  **뒤로** 화살표를 선택하여 앱으로 돌아갑니다.
 
 3.  왼쪽의 탐색 영역에서 **BrowseScreen1**을 선택합니다.
 
-4.  In the app designer, select the <bpt id="p1">**</bpt>preview the app<ept id="p1">**</ept> button (Play icon) on the command bar. <bpt id="p1">*</bpt>(You can also preview the app by pressing F5 on your keyboard.)<ept id="p1">*</ept>
+4.  앱 디자이너의 명령 모음에서 **앱 미리 보기** 단추(재생 아이콘)를 선택합니다. (키보드에서 F5 키를 눌러 앱을 미리 볼 수도 있습니다.)
 
 4.  앱이 열리면 **검색 항목** 필드에 텍스트 **Maria**
     를 입력합니다(갤러리의 항목이 검색 필드에 입력된 항목을 기준으로 필터링하는 방법을 확인합니다).
 
-5.  현재 캠퍼스 관리부는 방문자 등록을 추적하기 위해 Excel 스프레드시트를 활용하고 있습니다.
+5.  **Maria Campbell**에 대한 **Contoso Suite** 레코드가 표시되면 행을 클릭하여 해당 방문에 대한 세부 정보를 엽니다. (**참고**: 하나 이상의 Contoso Suites Maria Campbell 레코드가 표시되면 아무거나 선택합니다)
 
 6.  레코드를 편집하려면 앱의 오른쪽 위 모서리에 있는 **연필 아이콘**을 선택합니다.
 
@@ -121,7 +121,7 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 8.  화면 오른쪽 위에서 **X** 아이콘을 클릭하여 캔버스 앱 편집기로 돌아갑니다.
 
-건물 액세스가 보안 요원에 의해 제어되고, 모든 방문이 반드시 호스트에 의해 사전 등록 및 기록되는 현대화된 방문자 등록 시스템을 원합니다.
+축하합니다! 첫 번째 캔버스 앱을 만들고 구성했습니다.
 
 ## <a name="challenges"></a>과제
 
