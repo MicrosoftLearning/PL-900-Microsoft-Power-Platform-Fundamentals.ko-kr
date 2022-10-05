@@ -2,18 +2,13 @@
 lab:
   title: '랩 5: 간단한 대시보드를 빌드하는 방법'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154446"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>랩 5: 간단한 대시보드를 빌드하는 방법
 
 ## <a name="scenario"></a>시나리오
 
-Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다. 캠퍼스 방문자는 현재 종이 저널에 기록되어 있습니다. 이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 캠퍼스 관리부는 건물 액세스가 보안 요원에 의해 제어되고, 모든 방문이 반드시 호스트에 의해 사전 등록 및 기록되는 현대화된 방문자 등록 시스템을 원합니다.
 
@@ -37,7 +32,7 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 ## <a name="things-to-consider-before-you-begin"></a>시작하기 전에 고려해야 할 사항
 
 -   보고서의 대상 그룹은 누구입니까?
--   대상 그룹은 보고서를 어떻게 소비합니까? 일반적인 디바이스는 무엇인가요? 위치는 어디인가요?
+-   How will the audience consume the report? Typical device? Location?
 -   시각화할 데이터가 충분합니까?
 -   방문 데이터를 분석하는 데 사용 가능한 특징은 무엇입니까?
 
@@ -51,17 +46,17 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
 2.  필요한 경우 <https://app.powerbi.com/>으로 이동하여 로그인합니다.
 
-3.  화면의 왼쪽 아래 모서리에서 **데이터 가져오기** 를 선택합니다.
+3.  화면의 왼쪽 아래 모서리에서 **데이터 가져오기**를 선택합니다.
 
 4.  **파일** 아래의 **새 콘텐츠 만들기** 섹션에서 **가져오기** 단추를 선택합니다.
 
-5.  **로컬 파일** 을 선택합니다.
+5.  **로컬 파일**을 선택합니다.
 
 6.  이전에 다운로드한 **visits.pbix** 파일을 찾아 선택합니다.
 
-7.  데이터 로드가 완료되면 **내 작업 영역** 을 확장하고 **방문** 보고서를 선택합니다(형식이 **Report** 로 설정되어 있음).
+7.  데이터 로드가 완료되면 **내 작업 영역**을 확장하고 **방문** 보고서를 선택합니다(형식이 **Report**로 설정되어 있음).
 
-8.  **편집** 을 클릭합니다. **편집** 메뉴 항목이 표시되지 않으면 **...** 를 클릭한 다음 **편집** 을 선택합니다.
+8.  Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>. If <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu item is not visible click <bpt id="p2">**</bpt>...<ept id="p2">**</ept> and then select <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept>.
 
 이제 랩에 사용할 Power BI 서비스를 설정했습니다.
 
@@ -69,19 +64,19 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
 1.  **시각화** 패널에서 **원형 차트** 아이콘을 눌러 차트를 삽입합니다.
 
-2.  필드 창에서 **bc_building** 옆에 있는 드롭다운 화살표를 누릅니다. **건물** 필드를 끌어서 **범례** 상자에 드롭합니다.
+2.  Press the drop-down arrow beside <bpt id="p1">**</bpt>bc_building<ept id="p1">**</ept> in the Fields pane. Drag the <bpt id="p1">**</bpt>Building<ept id="p1">**</ept> field and drop it into <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> box.
 
-3.  필드 창에서 **bc_Visit** 옆에 있는 드롭다운 화살표를 누릅니다. **방문** 필드를 끌어서 **값** 상자에 드롭합니다.
+3.  Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다.
 
 4.  모든 차트 구성 요소가 표시되도록 코너 핸들을 사용하여 원형 차트의 크기를 조정합니다.
 
 5.  원형 차트 외부의 보고서를 클릭하여 선택을 취소하고 **시각화** 창에서 누적된 열 차트를 선택합니다.
 
-6.  필드 창에서 **bc_Visit** 옆에 있는 드롭다운 화살표를 누릅니다. **방문** 필드를 끌어서 **Y축** 대상 상자에 놓습니다.
+6.  캠퍼스 방문자는 현재 종이 저널에 기록되어 있습니다.
 
 7.  **시작** 필드를 끌어서 **X축** 대상 상자에 놓습니다.
 
-8.  시각화 창에서 **연도** 및 **분기** 옆의 **x** 를 클릭하여 축의 **월** 및 **일** 합계만 남겨둡니다.
+8.  시각화 창에서 **연도** 및 **분기** 옆의 **x**를 클릭하여 축의 **월** 및 **일** 합계만 남겨둡니다.
 
 9.  모서리 핸들을 사용하여 필요에 따라 차트 크기를 조정합니다.
 
@@ -89,11 +84,11 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
     1.  원형 차트에서 다양한 건물 조각을 클릭하고 시간 보고서의 변경 사항을 관찰합니다.
 
-    2.  열 차트를 클릭합니다. 아래쪽 화살표를 눌러 **드릴다운** 모드를 켠 다음(또는 차트를 마우스 오른쪽 버튼으로 클릭하고 **드릴다운** 선택) 열을 클릭하여 다음 수준(일)으로 드릴다운합니다.
+    2.  이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
 
     3.  드릴업 및 드릴 다운 후, 시간 세로 막대형 차트에서 다양한 막대를 선택하여 원형 보고서의 변경 내용을 관찰합니다.
 
-11. **저장** 을 눌러 진행 중인 작업을 저장합니다.
+11. **저장**을 눌러 진행 중인 작업을 저장합니다.
 
 ## <a name="exercise-2-create-power-bi-dashboard"></a>연습 2: Power BI 대시보드 만들기
 
@@ -101,29 +96,29 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
 1.  이전 작업의 보고서가 열려있습니다.
 
-2.  메뉴에서 **대시보드에 고정** 을 선택합니다. 레이아웃에 따라 **...** 를 눌러 추가 메뉴 항목을 표시해야 할 수도 있습니다.
+2.  Select <bpt id="p1">**</bpt>Pin to a dashboard<ept id="p1">**</ept> on the menu. Depending on the layout you may need to press <bpt id="p1">**</bpt>...<ept id="p1">**</ept> to show additional menu items.
 
-3.  **대시보드에 고정** 프롬프트에서 **새 대시보드** 를 선택합니다.
+3.  **대시보드에 고정** 프롬프트에서 **새 대시보드**를 선택합니다.
 
-4.  **캠퍼스 관리** 를 **대시보드 이름** 으로 입력하고 **라이브 고정** 을 누릅니다.
+4.  **캠퍼스 관리**를 **대시보드 이름**으로 입력하고 **라이브 고정**을 누릅니다.
 
-5.  대시보드가 만들어졌는지 묻는 팝업 메시지가 표시됩니다. **대시보드로 이동** 을 선택합니다.
+5.  A pop-up will prompt you that the dashboard has been created. Select <bpt id="p1">**</bpt>Go to dashboard<ept id="p1">**</ept>.
 
 6.  표시된 원형 및 막대형 차트의 대화형 작업을 테스트합니다.
 
 ### <a name="task-2-add-visualizations-using-natural-language"></a>작업 \#2: 자연어를 사용하여 시각화 추가
 
-1.  **캠퍼스 관리** 대시보드 내에서 맨 위에 있는 **데이터에 대해 질문하기** 를 선택합니다.
+1.  **캠퍼스 관리** 대시보드 내에서 맨 위에 있는 **데이터에 대해 질문하기**를 선택합니다.
 
-2.  Q&A 영역에서 **방문 수에 따라 건물** 을 입력합니다. 막대형 차트가 표시됩니다.
+2.  Enter <bpt id="p1">**</bpt>buildings by number of visits<ept id="p1">**</ept> in Q&amp;A area. A bar chart will be displayed.
 
-3.  **시각적 개체 고정** 을 선택합니다.
+3.  **시각적 개체 고정**을 선택합니다.
 
-4.  **기존 대시보드** 를 선택하고 **캠퍼스 관리** 대시보드를 선택하고 **고정** 을 누릅니다.
+4.  **기존 대시보드**를 선택하고 **캠퍼스 관리** 대시보드를 선택하고 **고정**을 누릅니다.
 
-5.  **Q&A 종료** 를 클릭합니다.
+5.  **Q&A 종료**를 클릭합니다.
 
-**캠퍼스 관리** 대시보드에는 세 개의 시각적 개체가 표시되어야 합니다. 새 Q&A 시각적 개체를 보려면 아래로 스크롤해야 할 수 있습니다.
+Your <bpt id="p1">**</bpt>Campus Management<ept id="p1">**</ept> dashboard should be displayed with three visuals on it. You may have to scroll down to see the new Q&amp;A visual.
 
 대시 보드는 다음과 유사해야 합니다.
 
