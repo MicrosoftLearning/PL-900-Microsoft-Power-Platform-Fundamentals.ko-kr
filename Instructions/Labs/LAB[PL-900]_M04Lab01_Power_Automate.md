@@ -2,18 +2,13 @@
 lab:
   title: '랩 4: 자동화된 솔루션 빌드 방법'
   module: 'Module 4: Get Started with Power Automate'
-ms.openlocfilehash: 35d4b6940f31e1a2aef5e8b43d8ca7007e1b72f2
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154326"
 ---
+
 # <a name="lab-4-how-to-build-an-automated-solution"></a>랩 4: 자동화된 솔루션 빌드 방법
 
 ## <a name="scenario"></a>시나리오
 
-Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다. 캠퍼스 방문자는 현재 종이 저널에 기록되어 있습니다. 이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 캠퍼스 관리부는 건물 액세스가 보안 요원에 의해 제어되고, 모든 방문이 반드시 호스트에 의해 사전 등록 및 기록되는 현대화된 방문자 등록 시스템을 원합니다.
 
@@ -36,73 +31,73 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 ## <a name="exercise-1-create-visit-notification-flow"></a>연습 1: 방문 알림 흐름 만들기
 
-**목표:** 이 연습에서는 요구 사항을 구현하는 Power Automate 흐름을 만듭니다. 방문자는 방문이 생성될 때 방문에 할당된 고유 코드가 포함된 이메일을 보내야 합니다.
+<bpt id="p1">**</bpt>Objective:<ept id="p1">**</ept> In this exercise, you will create a Power Automate flow that implements the requirement. The visitor should be sent an email that includes the unique code assigned to the visit when a visit is created.
 
 ### <a name="task-1-create-a-flow"></a>작업 \#1: 흐름 만들기
 
-1.  <https://make.powerapps.com>로 이동합니다. 다시 인증해야 할 수도 있습니다. **로그인** 을 클릭하고 필요한 경우 지침을 따르세요.
+1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
 
 2.  아직 선택되지 않은 경우 오른쪽 상단에 있는 **[내 이니셜] 연습** 환경을 선택합니다.
 
-3.  왼쪽 탐색 영역에서 **흐름** 을 선택합니다.
+3.  왼쪽 탐색 영역에서 **흐름**을 선택합니다.
 
-4.  메시지가 표시되면 **시작** 을 선택합니다.
+4.  메시지가 표시되면 **시작**을 선택합니다.
 
-5.  **새 흐름** 을 클릭하고 **자동화된 클라우드 흐름** 을 선택합니다.
+5.  **새 흐름**을 클릭하고 **자동화된 클라우드 흐름**을 선택합니다.
 
-6.  **흐름 이름** 에 "방문 알림"을 입력합니다.
+6.  **흐름 이름**에 "방문 알림"을 입력합니다.
 
-7.  **흐름의 트리거 선택** 에서 **Dataverse** 를 검색합니다.
+7.  **흐름의 트리거 선택**에서 **Dataverse**를 검색합니다.
 
-8.  **행을 추가, 수정 또는 삭제할 때** 트리거를 선택한 다음 **만들기** 를 클릭합니다.
+8.  **행을 추가, 수정 또는 삭제할 때** 트리거를 선택한 다음 **만들기**를 클릭합니다.
 
 9.  흐름에 대한 트리거 조건을 채웁니다.
 
-    1.  **변경 유형** 에 대해 **추가됨** 을 선택합니다.
+    1.  **변경 유형**에 대해 **추가됨**을 선택합니다.
 
-    2.  **테이블 이름** 에 대해 **방문** 을 선택합니다.
+    2.  **테이블 이름**에 대해 **방문**을 선택합니다.
 
-    3.  **범위** 에 대한 **조직** 선택
+    3.  **범위**에 대한 **조직** 선택
 
-    4.  트리거 단계에서 줄임표( **...** )를 클릭하고 **이름 바꾸기** 를 클릭합니다. 이 트리거의 이름을 **"방문이 추가될 때"** 로 바꿉니다. 이것은 좋은 연습이므로 사용자 및 기타 흐름 편집자는 세부 정보에 대해 자세히 살펴볼 필요 없이 이 단계의 목적을 이해할 수 있습니다.
+    4.  On the trigger step, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>. Rename this trigger <bpt id="p1">**</bpt>"When a visit is added"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
 ### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>작업 \#2: 방문자 행을 가져오는 단계 만들기
 
-1.  **+ 새 단계** 를 선택합니다. 이 단계는 전자 메일을 포함하여 방문자 정보를 검색하는 데 필요합니다.
+1.  Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다.
 
-2.  **Dataverse** 를 검색합니다.
+2.  **Dataverse**를 검색합니다.
 
 3.  **ID 기준으로 행 가져오기** 작업을 선택합니다.
 
-4.  **연락처** 를 **테이블 이름** 으로 선택합니다.
+4.  **연락처**를 **테이블 이름**으로 선택합니다.
 
-5.  **행 ID** 필드를 선택합니다. 동적 콘텐츠 또는 식을 선택하기 위한 창이 나타납니다.
+5.  캠퍼스 방문자는 현재 종이 저널에 기록되어 있습니다.
 
-6.  **행 ID** 필드에서 동적 콘텐츠 목록의 **방문자(값)** 를 선택합니다. 이 단계에서는 이 흐름을 트리거하기 위해 만든 방문 행에 대한 연락처를 조회합니다. 전자 메일 주소는 연락처 테이블의 일부이므로 방문자에게 전자 메일을 보내려면 이 정보가 필요합니다.
+6.  이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
 
-7.  이 작업에서 줄임표( **...** )를 클릭하고 **이름 바꾸기** 를 클릭합니다.
-        이 작업의 이름을 **"방문자 받기"** 로 바꿉니다. 이것은 좋은 연습이므로 사용자 및 기타 흐름 편집자는 세부 정보에 대해 자세히 살펴볼 필요 없이 이 단계의 목적을 이해할 수 있습니다.
+7.  On this action, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>.
+        Rename this action <bpt id="p1">**</bpt>"Get the Visitor"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
 ### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>작업 \#3: 방문자에게 메일을 보내는 단계 만들기
 
-1.  **+ 새 단계를** 클릭합니다. 이 단계는 방문자에게 전자 메일을 보내는 단계입니다.
+1.  Click <bpt id="p1">**</bpt>+ New step<ept id="p1">**</ept>. This is the step that will send an email to the visitor.
 
 2.  메일을 검색하고 **Office 365 Outlook** 커넥터를 선택한 다음 **이메일 보내기(V2)** 작업을 선택합니다.
 
-3.  이 작업을 사용하기 위한 사용 약관을 수락하라는 메시지가 표시되면 **수락** 을 클릭합니다.
+3.  이 작업을 사용하기 위한 사용 약관을 수락하라는 메시지가 표시되면 **수락**을 클릭합니다.
 
-4.  **받는 사람** 필드 아래에서 **동적 콘텐츠 추가** 를 선택합니다. 
+4.  **받는 사람** 필드 아래에서 **동적 콘텐츠 추가**를 선택합니다. 
     
-5.  동적 콘텐츠 목록에서 **메일** 을 선택합니다.
+5.  동적 콘텐츠 목록에서 **메일**을 선택합니다.
         > Notice that it is beneath the **Get the visitor** header. This means you
         are selecting the Email that is related to the Visitor that you looked
         up in the previous step.
 
-6.  **벨로즈 대학 예약 방문** 을 **제목** 필드에 입력합니다.
+6.  **벨로즈 대학 예약 방문**을 **제목** 필드에 입력합니다.
 
-7.  **전자 메일 본문** 에 다음 텍스트를 입력합니다.
+7.  **전자 메일 본문**에 다음 텍스트를 입력합니다.
 
->   필드가 괄호로 명명되는 곳에 동적 콘텐츠를 배치해야 합니다. 먼저 모든 텍스트를 복사하여 붙여넣은 다음 올바른 장소에 동적 콘텐츠를 추가하는 것이 좋습니다.
+>   Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy &amp; paste all text first and then add dynamic content in the correct places.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Dear {First Name},
@@ -112,18 +107,18 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
    Best regards,
 
    Campus Administration
-   Bellows College
+   Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-8.  **{First Name}** 텍스트를 강조 표시합니다. 이를 **방문자 가져오기** 단계의 **이름** 필드로 바꿉니다.
+8.  Highlight the <bpt id="p1">**</bpt>{First Name}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>First Name<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>Get the Visitor<ept id="p2">**</ept> step.
 
-9.  **{Scheduled Start}** 텍스트를 강조 표시합니다. **예약된 시작** 필드 **방문이 추가될 때** 단계로 대체합니다.
+9.  Highlight the <bpt id="p1">**</bpt>{Scheduled Start}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled Start<ept id="p1">**</ept> field <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
 
-10.  **{Scheduled End}** 텍스트를 강조 표시합니다. **방문이 추가될 때** 단계의 **예약된 종료** 필드로 바꿉니다.
+10.  Highlight the <bpt id="p1">**</bpt>{Scheduled End}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled End<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
 
-11.  **저장** 을 클릭합니다.
+11.  **저장**을 클릭합니다.
 
-다음 작업에 대해 이 흐름 탭을 열어 둡니다. 흐름은 대략 다음과 같아야 합니다.
+Leave this flow tab open for the next task. You flow should look approximately like the following:
 
 ![흐름 단계의 예입니다.](media/4-Flow.png)
 
@@ -133,15 +128,15 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 2.  아직 선택되지 않은 경우 오른쪽 상단에 있는 **[내 이니셜] 연습** 환경을 선택합니다.
 
-3.  **앱** 을 클릭하여 앞서 만든 **Bellows Campus Management** 모델 기반 앱을 선택합니다.
+3.  **앱**을 클릭하여 앞서 만든 **Bellows Campus Management** 모델 기반 앱을 선택합니다.
 
 3.  이 브라우저 탭을 열어 두고 흐름이 있는 이전 탭으로 다시 이동합니다.
 
-4.  명령 모음에서 **테스트** 를 클릭합니다. **수동** 을 선택한 다음 **테스트** 를 클릭합니다.
+4.  On the command bar, click <bpt id="p1">**</bpt>Test<ept id="p1">**</ept>. Select <bpt id="p1">**</bpt>Manually<ept id="p1">**</ept> and then click <bpt id="p2">**</bpt>Test<ept id="p2">**</ept>.
 
 5.  모델 기반 앱이 열려 있는 브라우저 탭으로 이동합니다. 
 
-6.  왼쪽의 탐색 영역에서 **방문** 을 선택합니다.
+6.  왼쪽의 탐색 영역에서 **방문**을 선택합니다.
 
 6. **+ 새로 만들기** 단추를 눌러 새 **방문** 레코드를 추가합니다.
 
@@ -157,10 +152,10 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 8. **저장 후 닫기** 단추를 선택합니다.
 
-9. 흐름 테스트가 실행되는 브라우저 탭으로 이동합니다. 잠시 후 흐름 실행을 볼 수 있습니다. 여기에서 흐름의 문제를 확인하거나 성공적으로 실행되었는지 확인할 수 있습니다.
+9. Navigate to the browser tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully.
 
-John Doe의 메일을 개인 메일로 입력했기 때문에 조금 후에 받은 편지함에 메일이 도착합니다. 정크 메일 폴더로 이동될 수 있습니다.
+After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. Note that it may go to your Junk Email folder.
 
 ## <a name="challenges"></a>과제
 
-- 메일에 서식을 지정합니다. 어떻게 하면 좀 더 전문적으로 보이게 할 수 있을까요?
+- Play around with the formatting on the email. How can you make it more professional looking?
