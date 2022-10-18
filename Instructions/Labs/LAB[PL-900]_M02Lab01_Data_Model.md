@@ -8,13 +8,13 @@ lab:
 
 ## <a name="scenario"></a>시나리오
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다. 캠퍼스 방문은 현재 종이에 기록되어 있습니다. 이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
 
 캠퍼스 관리부는 건물 액세스가 보안 요원에 의해 제어되고, 모든 방문이 반드시 호스트에 의해 사전 등록 및 기록되는 현대화된 방문자 등록 시스템을 원합니다.
 
 이 과정 전반에 걸쳐 벨로즈 칼리지 관리 및 보안 담당자가 캠퍼스 내 건물에 대한 액세스를 관리하고 제어할 수 있도록 애플리케이션을 빌드하고 자동화를 수행합니다.
 
-In this lab you will access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+이 랩에서는 환경에 액세스하고 Microsoft Dataverse 데이터베이스를 만들고 변경 내용을 추적하는 솔루션을 만듭니다. 또한 다음 요구 사항을 지원하는 데이터 모델을 만듭니다.
 
 - R1 – 예약된 캠퍼스 방문에 대한 정보 추적
 
@@ -28,7 +28,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 학습 환경을 준비하려면 다음을 수행합니다.
 
-- Refer to the <bpt id="p1">[</bpt>data model document<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)</ept> for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
+- 메타데이터에 대한 설명(테이블 및 관계)은 [데이터 모델 문서](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)를 참조하세요. CTRL 키를 누른 상태로 클릭하거나 링크를 마우스 오른쪽 단추로 클릭하여 새 창에서 데이터 모델 문서를 열 수 있습니다.
 - 방문 테이블 만들기
 - Excel 스프레드시트를 사용하여 방문 데이터 가져오기
 
@@ -166,7 +166,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 이 작업에서는 Excel 파일에서 방문 데이터를 가져옵니다.
 
-1. You should have the <bpt id="p1">**</bpt>Visits.xlsx<ept id="p1">**</ept> file stored on your Desktop. Download <bpt id="p1">[</bpt>Visits.xlsx<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)</ept> if you do not.
+1. 바탕 화면에 **Visits.xlsx** 파일이 저장되어 있을 것입니다. 그렇지 않으면 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)를 다운로드합니다.
 
 2. 아직 로그인 하지 않은 경우 [https://make.powerapps.com](https://make.powerapps.com/)에 로그인합니다.
 
@@ -180,7 +180,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 7. 표시되는 메뉴에서 **업로드** 단추를 선택합니다.
 
-8. Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다.
+8. 이전에 다운로드한 **Visits.xlsx** 파일을 찾아 선택합니다. (참고: 파일 업로드에 1~2분 정도 소요될 수 있습니다. 매핑 에러가 있다는 메시지가 나와도 걱정하지 마세요. 다음에 수정할 것입니다.)
 
 9. **열 매핑**을 클릭합니다(열 매핑 옵션을 보려면 오른쪽으로 스크롤해야 할 수 있음).
 
@@ -203,7 +203,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 14. 오른쪽 위 모서리에서 **가져오기**를 클릭하여 데이터 가져오기를 완료합니다.
 
-캠퍼스 방문은 현재 종이에 기록되어 있습니다.
+**참고:** 데이터를 테이블로 가져오는 데 몇 분이 걸릴 수 있습니다. 몇 가지 에러가 표시되더라도 정상이며 과정의 나머지 부분에 영향을 미치지 않으므로 걱정하지 마세요.
 
 15. **X**를 클릭하여 데이터 가져오기 패널을 닫습니다.
 
