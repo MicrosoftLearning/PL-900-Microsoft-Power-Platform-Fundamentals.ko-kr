@@ -164,7 +164,7 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 ### <a name="task-11-load-excel-file-to-onedrive"></a>작업 \#1.1: OneDrive에 Excel 파일 로드하기
 
-1. 바탕 화면에 **Visits.xlsx** 파일이 저장되어 있을 것입니다. 그렇지 않으면 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)를 다운로드합니다.
+1. **C:/LabFiles**의 가상 머신에 저장된 **Visits.xlsx** 파일이 있어야 합니다. 그렇지 않으면 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)를 다운로드합니다.
 
 2. 아직 로그인 하지 않은 경우 [https://make.powerapps.com](https://make.powerapps.com/)에 로그인합니다.
 
