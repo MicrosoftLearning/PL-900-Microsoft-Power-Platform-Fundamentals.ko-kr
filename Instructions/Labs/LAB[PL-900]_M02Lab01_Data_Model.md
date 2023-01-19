@@ -14,7 +14,7 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 이 과정 전반에 걸쳐 벨로즈 칼리지 관리 및 보안 담당자가 캠퍼스 내 건물에 대한 액세스를 관리하고 제어할 수 있도록 애플리케이션을 빌드하고 자동화를 수행합니다.
 
-이 랩에서는 환경에 액세스하고 Microsoft Dataverse 데이터베이스를 만들고 변경 내용을 추적하는 솔루션을 만듭니다. 또한 다음 요구 사항을 지원하는 데이터 모델을 만듭니다.
+이 랩에서는 환경에 액세스하고 Microsoft Dataverse 데이터베이스를 만듭니다. 또한 다음 요구 사항을 지원하는 데이터 모델을 만듭니다.
 
 - R1 – 예약된 캠퍼스 방문에 대한 정보 추적
 
@@ -23,6 +23,7 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 - R3 – 방문의 일정, 기록 및 관리
 
 마지막으로 샘플 데이터를 Microsoft Dataverse로 가져옵니다.
+
 
 ## <a name="high-level-lab-steps"></a>고급 랩 단계
 
@@ -40,9 +41,11 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 - 명명 규칙 - 신중하게 이름을 입력합니다.
 
+
 ## <a name="exercise-1-create-new-table"></a>연습 1: 새 테이블 만들기
 
 **목표:** 이 연습에서는 새 사용자 지정 방문 테이블을 만듭니다.
+
 
 ### <a name="task-1-create-visit-table-and-columns"></a>작업 \# 1: 방문 테이블 및 열 만들기
 
@@ -170,7 +173,7 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 3. 아직 선택되지 않은 경우 오른쪽 상단에 있는 **[내 이니셜] 연습** 환경을 선택합니다.
 
-4. 왼쪽 위 모서리에서 와플 단추를 클릭하여 애플리케이션을 변경하고 **OneDrive**를 선택합니다. (OneDrive를 설정하는 데 몇 분 정도 걸릴 수 있습니다. 화면에 표시되면 OneDrive가 준비됨을 클릭합니다.)
+4. 왼쪽 위 모서리에서 와플 단추를 클릭하여 애플리케이션을 변경하고 **OneDrive**를 선택합니다. (OneDrive를 설정하는 데 몇 분 정도 걸릴 수 있습니다. 화면에 표시되면 **OneDrive가 준비됨**을 클릭합니다.)
 
 5. 위쪽 메뉴에서 **업로드**를 클릭하고 **파일**을 선택합니다.
 
@@ -210,14 +213,14 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 15. **열 매핑**에서 열을 해당 대상 열에 매핑합니다.
 
-| 대상 열| 원본 값 |
-| - | - |
-| crxxx_ActualEnd| 실제 종료 |
-| crxxx_ActualStart| 실제 시작 |
-| crxxx_Code| 코드 |
-| crxxx_Name| name |
-| crxxx_ScheduledEnd| 예약된 종료 |
-| crxxx_ScheduledStart| 예약된 시작 |
+| 대상 열  | 원본 값   |
+|:---------------------|:----------------|
+| crxxx_ActualEnd      | 실제 종료      |
+| crxxx_ActualStart    | 실제 시작    |
+| crxxx_Code           | 코드            |
+| crxxx_Name           | name            |
+| crxxx_ScheduledEnd   | 예약된 종료   |
+| crxxx_ScheduledStart | 예약된 시작 |
 
 16. **다음**을 클릭합니다.
 
