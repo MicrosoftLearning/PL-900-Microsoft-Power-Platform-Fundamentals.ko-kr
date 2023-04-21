@@ -4,9 +4,9 @@ lab:
   module: 'Module 5: Get Started with Power BI'
 ---
 
-## <a name="lab-5-how-to-build-a-simple-dashboard"></a>랩 5: 간단한 대시보드를 빌드하는 방법
+## 랩 5: 간단한 대시보드를 빌드하는 방법
 
-## <a name="scenario"></a>시나리오
+## 시나리오
 
 Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다. 캠퍼스 방문자는 현재 종이 저널에 기록되어 있습니다. 이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
 
@@ -16,7 +16,7 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 이 랩에서는 캠퍼스 방문에 대한 데이터를 시각화하는 Power BI 보고서 및 대시보드를 빌드합니다.
 
-## <a name="high-level-lab-steps"></a>고급 랩 단계
+## 고급 랩 단계
 
 Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따릅니다.
 
@@ -24,43 +24,46 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
 -   추가 시각화를 빌드하는 사용자 자연어 쿼리 활용
 
-## <a name="prerequisites"></a>필수 조건
+## 필수 조건
 
 - **모듈 0 랩 0 - 랩 환경 검증** 완료
 - **모듈 2 랩 1 - 데이터 모델링** 완료
 
-## <a name="things-to-consider-before-you-begin"></a>시작하기 전에 고려해야 할 사항
+## 시작하기 전에 고려해야 할 사항
 
 -   보고서의 대상 그룹은 누구입니까?
 -   대상 그룹은 보고서를 어떻게 소비합니까? 일반적인 디바이스는 무엇인가요? 위치는 어디인가요?
 -   시각화할 데이터가 충분합니까?
 -   방문 데이터를 분석하는 데 사용 가능한 특징은 무엇입니까?
 
-## <a name="exercise-1-create-power-bi-report"></a>연습 1: Power BI 보고서 만들기
+## 연습 1: Power BI 보고서 만들기
 
 **목표:** 이 연습에서는 앞선 연습에서 활용했던 Excel 스프레드시트 데이터를 기준으로 Power BI 보고서를 만듭니다.
 
-### <a name="task-1-prepare-power-bi-service"></a>작업 \#1: Power BI 서비스 준비
+### 작업 \#1: Power BI 서비스 준비
 
-1.  [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix)를 다운로드하여 컴퓨터에 저장합니다.
+1.  C:/LabFiles의 가상 머신에 저장된 visits.pbix 파일이 있어야 합니다. 아직 없는 경우 [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix)를 다운로드하고 컴퓨터에 저장합니다.
 
-2.  필요한 경우 <https://app.powerbi.com/>으로 이동하여 로그인합니다.
+2.  필요한 경우 새 탭을 열고 <https://app.powerbi.com/>으로 이동하여 로그인합니다.
 
-3.  화면의 왼쪽 아래 모서리에서 **데이터 가져오기**를 선택합니다.
+3.  왼쪽 탐색 영역에서 **내 작업 영역**을 선택합니다.
 
-4.  **파일** 아래의 **새 콘텐츠 만들기** 섹션에서 **가져오기** 단추를 선택합니다.
+5.  **업로드**를 선택한 다음, **찾아보기**를 선택합니다.
 
-5.  **로컬 파일**을 선택합니다.
+6.  이전에 다운로드한 **visits.pbix** 파일을 찾아 선택합니다. 
 
-6.  이전에 다운로드한 **visits.pbix** 파일을 찾아 선택합니다.
+7.  데이터 로드가 완료되면 **방문** 보고서를 선택합니다.
 
-7.  데이터 로드가 완료되면 **내 작업 영역**을 확장하고 **방문** 보고서를 선택합니다(형식이 **Report**로 설정되어 있음).
+    형식이 **보고서**로 설정되어 있으므로 데이터 세트를 선택하지 마세요.
 
-8.  **편집**을 클릭합니다. **편집** 메뉴 항목이 표시되지 않으면 **...** 를 클릭한 다음 **편집**을 선택합니다.
+8.  **편집**을 선택합니다. 
+
+    **편집** 메뉴 항목이 표시되지 않으면 줄임표 **…** 를 선택한 다음, **편집**을 선택합니다.
 
 이제 랩에 사용할 Power BI 서비스를 설정했습니다.
 
-### <a name="task-2-create-chart-and-time-visualizations"></a>작업 \#2: 차트 및 시간 시각화를 만듭니다
+
+### 작업 \#2: 차트 및 시간 시각화를 만듭니다
 
 1.  **시각화** 패널에서 **원형 차트** 아이콘을 눌러 차트를 삽입합니다.
 
@@ -90,9 +93,9 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
 11. **저장**을 눌러 진행 중인 작업을 저장합니다.
 
-## <a name="exercise-2-create-power-bi-dashboard"></a>연습 2: Power BI 대시보드 만들기
+## 연습 2: Power BI 대시보드 만들기
 
-### <a name="task-1-create-power-bi-dashboard"></a>작업 \#1: Power BI 대시보드 만들기
+### 작업 \#1: Power BI 대시보드 만들기
 
 1.  이전 작업의 보고서가 열려있습니다.
 
@@ -106,7 +109,7 @@ Power BI 대시보드를 디자인하고 만들기 위해 아래 단계를 따�
 
 6.  표시된 원형 및 막대형 차트의 대화형 작업을 테스트합니다.
 
-### <a name="task-2-add-visualizations-using-natural-language"></a>작업 \#2: 자연어를 사용하여 시각화 추가
+### 작업 \#2: 자연어를 사용하여 시각화 추가
 
 1.  **캠퍼스 관리** 대시보드 내에서 맨 위에 있는 **데이터에 대해 질문하기**를 선택합니다.
 
