@@ -4,9 +4,9 @@ lab:
   module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# <a name="lab-1-data-modeling"></a>랩 1: 데이터 모델링
+# 랩 1: 데이터 모델링
 
-## <a name="scenario"></a>시나리오
+## 시나리오
 
 Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니다. 캠퍼스 방문은 현재 종이에 기록되어 있습니다. 이 정보는 일관되게 수집되지 않으며, 전체 캠퍼스 방문 데이터를 수집하고 분석할 방법이 없습니다.
 
@@ -25,7 +25,7 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 마지막으로 샘플 데이터를 Microsoft Dataverse로 가져옵니다.
 
 
-## <a name="high-level-lab-steps"></a>고급 랩 단계
+## 고급 랩 단계
 
 학습 환경을 준비하려면 다음을 수행합니다.
 
@@ -33,21 +33,21 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 - 방문 테이블 만들기
 - Excel 스프레드시트를 사용하여 방문 데이터 가져오기
 
-## <a name="prerequisites"></a>필수 조건
+## 필수 조건
 
 - **모듈 0 랩 0 - 랩 환경 검증** 완료
 
-## <a name="things-to-consider-before-you-begin"></a>시작하기 전에 고려해야 할 사항
+## 시작하기 전에 고려해야 할 사항
 
 - 명명 규칙 - 신중하게 이름을 입력합니다.
 
 
-## <a name="exercise-1-create-new-table"></a>연습 1: 새 테이블 만들기
+## 연습 1: 새 테이블 만들기
 
 **목표:** 이 연습에서는 새 사용자 지정 방문 테이블을 만듭니다.
 
 
-### <a name="task-1-create-visit-table-and-columns"></a>작업 \# 1: 방문 테이블 및 열 만들기
+### 작업 \# 1: 방문 테이블 및 열 만들기
 
 **방문** 테이블은 방문자, 각 방문의 예약된 시간 및 실제 시간을 포함한 캠퍼스 방문 정보를 포함합니다.
 
@@ -161,11 +161,11 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
     - **저장**을 클릭합니다.
 
-## <a name="exercise-2-import-data"></a>연습 2: 데이터 가져오기
+## 연습 2: 데이터 가져오기
 
 **목표:** 이 연습에서는 샘플 데이터를 Dataverse 데이터베이스로 가져옵니다.
 
-### <a name="task-11-load-excel-file-to-onedrive"></a>작업 \#1.1: OneDrive에 Excel 파일 로드하기
+### 작업 \#1.1: OneDrive에 Excel 파일 로드하기
 
 1. **C:/LabFiles**의 가상 머신에 저장된 **Visits.xlsx** 파일이 있어야 합니다. 그렇지 않으면 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)를 다운로드합니다.
 
@@ -181,7 +181,7 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
  **참고:** 이 파일은 컴퓨터의 **모든 파일** 폴더에 있습니다.
  
-### <a name="task-12-create-a-dataflow"></a>작업 \#1.2: 데이터 흐름 만들기
+### 작업 \#1.2: 데이터 흐름 만들기
 
 1. 아직 로그인 하지 않은 경우 [https://make.powerapps.com](https://make.powerapps.com/)에 로그인합니다.
 
@@ -230,7 +230,7 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 **참고:** 데이터를 테이블로 가져오는 데 몇 분이 걸릴 수 있습니다. 몇 가지 에러가 표시되더라도 정상이며 과정의 나머지 부분에 영향을 미치지 않으므로 걱정하지 마세요.
 
-### <a name="task-3-verify-data-import"></a>작업 \#3: 데이터 가져오기 확인하기
+### 작업 \#3: 데이터 가져오기 확인하기
 
 1. 데이터를 가져온 후 화면 왼쪽의 탐색을 사용하여 **방문** 테이블을 다시 선택합니다.
 
