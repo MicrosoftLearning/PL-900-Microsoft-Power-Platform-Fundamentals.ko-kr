@@ -76,6 +76,6 @@ Copilot이 애플리케이션을 지원하는 테이블 구조를 빌드하기 �
 
 17. 필요한 경우, **Power Apps Studio 시작** 화면에서 **다시 보지 않기**를 선택하고 **건너뛰기** 단추를 선택합니다. 
 
-![](media/bonus-lab-copilot-01.png)
+![방금 만든 앱의 스크린샷](media/bonus-lab-copilot-01.png)
 
 축하합니다, Copilot을 이용해 새 앱을 만들었습니다. 
