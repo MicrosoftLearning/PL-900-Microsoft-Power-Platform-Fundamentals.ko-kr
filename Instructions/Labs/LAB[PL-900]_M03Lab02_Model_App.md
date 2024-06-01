@@ -1,7 +1,7 @@
 ---
 lab:
   title: '랩 3: 모델 기반 앱 빌드 방법'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # 랩 3: 모델 기반 앱 빌드 방법

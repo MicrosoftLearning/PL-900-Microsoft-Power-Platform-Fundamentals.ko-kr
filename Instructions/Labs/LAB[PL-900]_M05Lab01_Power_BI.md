@@ -1,7 +1,7 @@
 ---
 lab:
   title: '랩 5: 간단한 대시보드를 빌드하는 방법'
-  module: 'Module 5: Get Started with Power BI'
+  module: 'Module 5: Describe the capabilities of Microsoft Power BI'
 ---
 
 ## 랩 5: 간단한 대시보드를 빌드하는 방법

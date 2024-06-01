@@ -1,7 +1,7 @@
 ---
 lab:
   title: '보너스 랩: Copilot을 사용하여 캔버스 앱 빌드'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # 보너스 랩: Copilot을 사용하여 캔버스 앱 빌드

@@ -1,7 +1,7 @@
 ---
 lab:
   title: '랩 4: 자동화된 솔루션 빌드 방법'
-  module: 'Module 4: Get Started with Power Automate'
+  module: 'Module 4: Describe building automation with Microsoft Power Automate'
 ---
 
 # 랩 4: 자동화된 솔루션 빌드 방법
