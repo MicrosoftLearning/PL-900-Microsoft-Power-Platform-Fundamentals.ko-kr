@@ -1,7 +1,7 @@
 ---
 lab:
   title: '랩 1: 데이터 모델링'
-  module: 'Module 2: Introduction to Microsoft Dataverse'
+  module: 'Module 2: Identify foundational components of Microsoft Power Platform'
 ---
 
 # 랩 1: 데이터 모델링

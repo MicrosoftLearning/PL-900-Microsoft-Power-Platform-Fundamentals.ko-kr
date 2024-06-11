@@ -1,7 +1,7 @@
 ---
 lab:
   title: '보너스 랩: Copilot을 사용하여 캔버스 앱 빌드'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # 보너스 랩: Copilot을 사용하여 캔버스 앱 빌드
@@ -30,7 +30,7 @@ Bellows College는 캠퍼스 내에 여러 건물이 있는 교육 기관입니�
 
 ## 연습 1: Copilot을 사용하여 대학 방문 신청서를 작성합니다.
 
-**목표:** 이번 연습에서는 Expense Reports 테이블에 연결하여 캔버스 앱을 만듭니다.
+**목표:** 이 연습에서는 캠퍼스 방문 테이블에 연결하여 캔버스 앱을 만듭니다.
 
 ### 작업 \#1: 초기 애플리케이션 만들기
 
