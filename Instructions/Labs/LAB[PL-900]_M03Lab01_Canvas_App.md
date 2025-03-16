@@ -39,7 +39,7 @@ Bellows College는 여러 캠퍼스와 프로그램을 갖춘 교육 기관입�
 
 ### 작업 #1: 비용 보고서 앱 만들기
 
-1. https://make.powerapps.com 로 이동합니다.
+1. `https://make.powerapps.com` 로 이동합니다.
 
 1. 다시 인증이 필요할 수 있습니다. 필요한 경우 **로그인**을 선택하고 지침을 따릅니다.
 
